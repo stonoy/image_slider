@@ -5,7 +5,7 @@ const Modal = ({images, selectedId, setSelectedId, setModal}) => {
     const timerId = useRef(null)
 
     useEffect(() => {
-        if (!timerId.current){
+        if (timerId.current){
             clearInterval(timerId.current)
         }
 
